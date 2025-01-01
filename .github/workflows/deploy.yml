@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]  # 设置在 main 分支上推送时触发
+    branches: [ main ]
 
 jobs:
   build-and-deploy:
@@ -23,10 +23,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /git_trace_website  # 替换为你的仓库名
-
-      - name: Export
-        run: npm run export
+          NEXT_PUBLIC_BASE_PATH: /git_trace_website
 
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
@@ -34,5 +31,5 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # 部署到 gh-pages 分支
-          folder: out  # 部署 out 目录的内容 
+          branch: gh-pages
+          folder: out 
