@@ -263,7 +263,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto bg-blue-50 rounded-xl p-6">
             <h3 className="text-lg font-semibold text-blue-700 mb-2">Need Technical Support?</h3>
             <p className="text-gray-600 mb-3">
-              We're here to help! Feel free to reach out anytime for questions or suggestions at:
+              We&apos;re here to help! Feel free to reach out anytime for questions or suggestions at:
             </p>
             <a 
               href="mailto:fan1056218492@gmail.com" 
