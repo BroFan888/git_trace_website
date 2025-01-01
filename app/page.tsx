@@ -258,8 +258,24 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="text-center text-gray-600">
+        <div className="text-center text-gray-600 space-y-4">
           <p>© 2024 GitTrace. All rights reserved.</p>
+          <div className="max-w-2xl mx-auto bg-blue-50 rounded-xl p-6">
+            <h3 className="text-lg font-semibold text-blue-700 mb-2">Need Technical Support?</h3>
+            <p className="text-gray-600 mb-3">
+              We're here to help! Feel free to reach out anytime for questions or suggestions at:
+            </p>
+            <a 
+              href="mailto:fan1056218492@gmail.com" 
+              className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors font-medium"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              fan1056218492@gmail.com
+            </a>
+          </div>
         </div>
       </footer>
     </div>
