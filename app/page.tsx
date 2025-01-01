@@ -31,9 +31,9 @@ export default function Home() {
           <video
             className="w-full rounded-2xl shadow-2xl"
             controls
-            poster="/v1_screens/v1_main_screen.png"
+            poster="/git_trace_website/v1_screens/v1_main_screen.png"
           >
-            <source src="/v1_screens/v1_show.mp4" type="video/mp4" />
+            <source src="/git_trace_website/v1_screens/v1_show.mp4" type="video/mp4" />
           </video>
         </div>
 
@@ -48,14 +48,14 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Image
-              src="/v1_screens/v1_main_screen.png"
+              src="/git_trace_website/v1_screens/v1_main_screen.png"
               alt="Light Mode"
               width={1400}
               height={900}
               className="rounded-2xl shadow-xl w-full"
             />
             <Image
-              src="/v1_screens/v1_main_screen_dark.png"
+              src="/git_trace_website/v1_screens/v1_main_screen_dark.png"
               alt="Dark Mode"
               width={1400}
               height={900}
@@ -73,7 +73,7 @@ export default function Home() {
             </h2>
             <div className="space-y-8">
               <Image
-                src="/v1_screens/v1_changed_files_screen.png"
+                src="/git_trace_website/v1_screens/v1_changed_files_screen.png"
                 alt="Changed Files View - Light"
                 width={1400}
                 height={900}
@@ -81,7 +81,7 @@ export default function Home() {
                 priority
               />
               <Image
-                src="/v1_screens/v1_changed_files_screen_dark.png"
+                src="/git_trace_website/v1_screens/v1_changed_files_screen_dark.png"
                 alt="Changed Files View - Dark"
                 width={1400}
                 height={900}
@@ -101,14 +101,14 @@ export default function Home() {
             </h2>
             <div className="space-y-8">
               <Image
-                src="/v1_screens/v1_search_screen.png"
+                src="/git_trace_website/v1_screens/v1_search_screen.png"
                 alt="Commit History - Light"
                 width={1400}
                 height={900}
                 className="rounded-2xl shadow-xl w-full"
               />
               <Image
-                src="/v1_screens/v1_search_screen_dark.png"
+                src="/git_trace_website/v1_screens/v1_search_screen_dark.png"
                 alt="Commit History - Dark"
                 width={1400}
                 height={900}
@@ -128,14 +128,14 @@ export default function Home() {
             </h2>
             <div className="space-y-8">
               <Image
-                src="/v1_screens/v1_diff_screen.png"
+                src="/git_trace_website/v1_screens/v1_diff_screen.png"
                 alt="Code Diff - Light"
                 width={1400}
                 height={900}
                 className="rounded-2xl shadow-xl w-full"
               />
               <Image
-                src="/v1_screens/v1_diff_screen_dark.png"
+                src="/git_trace_website/v1_screens/v1_diff_screen_dark.png"
                 alt="Code Diff - Dark"
                 width={1400}
                 height={900}
@@ -155,14 +155,14 @@ export default function Home() {
             </h2>
             <div className="space-y-8">
               <Image
-                src="/v1_screens/v1_privacy_screen.png"
+                src="/git_trace_website/v1_screens/v1_privacy_screen.png"
                 alt="Privacy Protection - Light"
                 width={1400}
                 height={900}
                 className="rounded-2xl shadow-xl w-full"
               />
               <Image
-                src="/v1_screens/v1_privacy_screen_dark.png"
+                src="/git_trace_website/v1_screens/v1_privacy_screen_dark.png"
                 alt="Privacy Protection - Dark"
                 width="1400"
                 height="900"
@@ -239,9 +239,9 @@ export default function Home() {
               <video
                 className="w-full rounded-2xl shadow-2xl"
                 controls
-                poster="/v1_screens/v1_main_screen.png"
+                poster="/git_trace_website/v1_screens/v1_main_screen.png"
               >
-                <source src="/v1_screens/v1_shortcuts_demo.mp4" type="video/mp4" />
+                <source src="/git_trace_website/v1_screens/v1_shortcuts_demo.mp4" type="video/mp4" />
               </video>
             </div>
         
