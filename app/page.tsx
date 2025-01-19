@@ -259,6 +259,23 @@ export default function Home() {
               </div>
             </div>
 
+            <div className="space-y-8">
+              <Image
+                src="/git_trace_website/v1_screens/v1_search_shortcuts_screen.png"
+                alt="Privacy Protection - Light"
+                width={1400}
+                height={900}
+                className="rounded-2xl shadow-xl w-full"
+              />
+              <Image
+                src="/git_trace_website/v1_screens/v1_search_shortcuts_screen_dark.png"
+                alt="Privacy Protection - Dark"
+                width="1400"
+                height="900"
+                className="rounded-2xl shadow-xl w-full"
+              />
+            </div>
+
             <div className="mb-32">
               <video
                 className="w-full rounded-2xl shadow-2xl"
