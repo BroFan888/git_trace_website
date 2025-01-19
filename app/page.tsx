@@ -185,6 +185,30 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold text-gray-900 text-center mb-8">
                   Navigate Like a Pro
                 </h3>
+
+                {/* Previous Search Page */}
+                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-xl">
+                  <div className="space-y-1">
+                    <p className="text-lg font-medium text-gray-900">Previous Search Page</p>
+                    <p className="text-gray-600">Navigate to previous search results page</p>
+                  </div>
+                  <div className="flex gap-2">
+                    <kbd className="px-3 py-1 bg-white rounded-lg shadow text-sm font-mono">⌘</kbd>
+                    <kbd className="px-3 py-1 bg-white rounded-lg shadow text-sm font-mono">←</kbd>
+                  </div>
+                </div>
+
+                {/* Next Search Page */}
+                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-xl">
+                  <div className="space-y-1">
+                    <p className="text-lg font-medium text-gray-900">Next Search Page</p>
+                    <p className="text-gray-600">Navigate to next search results page</p>
+                  </div>
+                  <div className="flex gap-2">
+                    <kbd className="px-3 py-1 bg-white rounded-lg shadow text-sm font-mono">⌘</kbd>
+                    <kbd className="px-3 py-1 bg-white rounded-lg shadow text-sm font-mono">→</kbd>
+                  </div>
+                </div>
                 
                 {/* File Tree Navigation */}
                 <div className="flex items-center justify-between p-4 bg-gray-50 rounded-xl">
