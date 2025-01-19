@@ -259,7 +259,6 @@ export default function Home() {
       {/* Footer */}
       <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center text-gray-600 space-y-4">
-          <p>© 2024 GitTrace. All rights reserved.</p>
           <div className="max-w-2xl mx-auto bg-blue-50 rounded-xl p-6">
             <h3 className="text-lg font-semibold text-blue-700 mb-2">Need Technical Support?</h3>
             <p className="text-gray-600 mb-3">
@@ -276,6 +275,7 @@ export default function Home() {
               fan1056218492@gmail.com
             </a>
           </div>
+          <p>© 2024 GitTrace. All rights reserved.</p>
         </div>
       </footer>
     </div>
