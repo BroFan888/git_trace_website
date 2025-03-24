@@ -18,7 +18,7 @@ export default function Home() {
               href="#" 
               className="inline-flex items-center px-8 py-3 rounded-full text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:opacity-90 transition-all shadow-lg hover:shadow-xl"
             >
-              Coming Soon to Mac App Store
+              Download from Mac App Store
             </a>
           </div>
         </div>
