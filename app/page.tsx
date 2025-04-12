@@ -15,7 +15,7 @@ export default function Home() {
           </p>
           <div className="mt-10">
             <a
-              href="#" 
+              href="macappstore://itunes.apple.com/app/6740000900" 
               className="inline-flex items-center px-8 py-3 rounded-full text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:opacity-90 transition-all shadow-lg hover:shadow-xl"
             >
               Download from Mac App Store
@@ -313,10 +313,10 @@ export default function Home() {
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
-              1056218492@qq.com
+              fan19223710379@gmail.com
             </a>
           </div>
-          <p>© 2024 GitTrace. All rights reserved.</p>
+          <p>© 2025 GitTrace. All rights reserved.</p>
         </div>
       </footer>
     </div>
