@@ -1,175 +1,77 @@
-"use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 export default function Home() {
-  const fadeInUp = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 }
-  };
-
-  const staggerContainer = {
-    animate: {
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50">
       {/* Hero Section */}
-      <motion.header 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="max-w-7xl mx-auto pt-24 pb-16 px-4 sm:px-6 lg:px-8"
-      >
+      <header className="max-w-7xl mx-auto pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <motion.h1 
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text"
-          >
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
             GitTrace
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-6 text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto"
-          >
+          </h1>
+          <p className="mt-6 text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
             A beautiful Git client with elegant interface and zero network access. 
             Your code stays completely private, right where it belongs.
-          </motion.p>
-          <motion.div 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="mt-10"
-          >
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+          </p>
+          <div className="mt-10">
+            <a
               href="macappstore://itunes.apple.com/app/6740000900" 
               className="inline-flex items-center px-8 py-3 rounded-full text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:opacity-90 transition-all shadow-lg hover:shadow-xl"
             >
               Download from Mac App Store
-            </motion.a>
-          </motion.div>
+            </a>
+          </div>
         </div>
       </header>
 
       {/* Main Content */}
-      <motion.main 
-        className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
-      >
+      <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Video Section */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mb-32"
-        >
+        <div className="mb-32">
           <video
-            className="w-full rounded-2xl shadow-2xl transform transition-transform hover:scale-[1.01]"
+            className="w-full rounded-2xl shadow-2xl"
             controls
             poster="/git_trace_website/v1_screens/v1_main_screen.png"
           >
             <source src="/git_trace_website/v1_screens/v1_show.mp4" type="video/mp4" />
           </video>
-        </motion.div>
+        </div>
 
         {/* Dark Mode Introduction */}
-        <motion.div 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mb-32 text-center"
-        >
-          <motion.h2 
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text mb-6"
-          >
+        <div className="mb-32 text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
             Light & Dark, Your Choice
-          </motion.h2>
-          <motion.p 
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="text-xl text-gray-600 max-w-3xl mx-auto mb-12"
-          >
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
             Seamlessly switch between light and dark modes. 
             Every detail is carefully crafted for both appearances.
-          </motion.p>
-          <motion.div 
-            initial={{ y: 30, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8"
-          >
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            >
-              <Image
-                src="/git_trace_website/v1_screens/v1_main_screen.png"
-                alt="Light Mode"
-                width={1400}
-                height={900}
-                className="rounded-2xl shadow-xl w-full hover:shadow-2xl transition-shadow duration-300"
-              />
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            >
-              <Image
-                src="/git_trace_website/v1_screens/v1_main_screen_dark.png"
-                alt="Dark Mode"
-                width={1400}
-                height={900}
-                className="rounded-2xl shadow-xl w-full hover:shadow-2xl transition-shadow duration-300"
-              />
-            </motion.div>
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Image
+              src="/git_trace_website/v1_screens/v1_main_screen.png"
+              alt="Light Mode"
+              width={1400}
+              height={900}
+              className="rounded-2xl shadow-xl w-full"
+            />
+            <Image
+              src="/git_trace_website/v1_screens/v1_main_screen_dark.png"
+              alt="Dark Mode"
+              width={1400}
+              height={900}
+              className="rounded-2xl shadow-xl w-full"
+            />
           </div>
         </div>
 
         {/* Features Section */}
         <div className="space-y-32">
           {/* Feature 1 - Changed Files View */}
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
-            <motion.h2 
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text text-center"
-            >
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-gray-900 text-center">
               Changed Files View
-            </motion.h2>
-            <motion.div 
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="space-y-8"
-            >
+            </h2>
+            <div className="space-y-8">
               <Image
                 src="/git_trace_website/v1_screens/v1_changed_files_screen.png"
                 alt="Changed Files View - Light"
@@ -193,122 +95,54 @@ export default function Home() {
           </div>
 
           {/* Feature 2 - Commit History */}
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
-            <motion.h2 
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text text-center"
-            >
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-gray-900 text-center">
               Commit History Browser
-            </motion.h2>
-            <motion.div 
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="space-y-8"
-            >
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Image
-                  src="/git_trace_website/v1_screens/v1_search_screen.png"
-                  alt="Commit History - Light"
-                  width={1400}
-                  height={900}
-                  className="rounded-2xl shadow-xl w-full hover:shadow-2xl transition-shadow duration-300"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Image
-                  src="/git_trace_website/v1_screens/v1_search_screen_dark.png"
-                  alt="Commit History - Dark"
-                  width={1400}
-                  height={900}
-                  className="rounded-2xl shadow-xl w-full hover:shadow-2xl transition-shadow duration-300"
-                />
-              </motion.div>
-            </motion.div>
-            <motion.p 
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="text-xl text-gray-600 text-center max-w-3xl mx-auto"
-            >
+            </h2>
+            <div className="space-y-8">
+              <Image
+                src="/git_trace_website/v1_screens/v1_search_screen.png"
+                alt="Commit History - Light"
+                width={1400}
+                height={900}
+                className="rounded-2xl shadow-xl w-full"
+              />
+              <Image
+                src="/git_trace_website/v1_screens/v1_search_screen_dark.png"
+                alt="Commit History - Dark"
+                width={1400}
+                height={900}
+                className="rounded-2xl shadow-xl w-full"
+              />
+            </div>
+            <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
               Visualize commit history and easily track project evolution. 
               Powerful search functionality helps you quickly locate key commits.
             </p>
           </div>
 
           {/* Feature 3 - Code Diff */}
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
-            <motion.h2 
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text text-center"
-            >
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-gray-900 text-center">
               Code Diff View
-            </motion.h2>
-            <motion.div 
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="space-y-8"
-            >
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Image
-                  src="/git_trace_website/v1_screens/v1_diff_screen.png"
-                  alt="Code Diff - Light"
-                  width={1400}
-                  height={900}
-                  className="rounded-2xl shadow-xl w-full hover:shadow-2xl transition-shadow duration-300"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Image
-                  src="/git_trace_website/v1_screens/v1_diff_screen_dark.png"
-                  alt="Code Diff - Dark"
-                  width={1400}
-                  height={900}
-                  className="rounded-2xl shadow-xl w-full hover:shadow-2xl transition-shadow duration-300"
-                />
-              </motion.div>
-            </motion.div>
-            <motion.p 
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="text-xl text-gray-600 text-center max-w-3xl mx-auto"
-            >
+            </h2>
+            <div className="space-y-8">
+              <Image
+                src="/git_trace_website/v1_screens/v1_diff_screen.png"
+                alt="Code Diff - Light"
+                width={1400}
+                height={900}
+                className="rounded-2xl shadow-xl w-full"
+              />
+              <Image
+                src="/git_trace_website/v1_screens/v1_diff_screen_dark.png"
+                alt="Code Diff - Dark"
+                width={1400}
+                height={900}
+                className="rounded-2xl shadow-xl w-full"
+              />
+            </div>
+            <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
               Intelligent code comparison functionality with multiple diff modes, 
               helping you precisely locate every code change.
             </p>
